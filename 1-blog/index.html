@@ -9,9 +9,9 @@
 
 <body>
   <header>
+    <li><span>B</span></li>
     <nav>
       <ul>
-        <li><span>B</span></li>
         <li><a href="#">Мой блог</a></li>
         <li><a href="#">HTML и CSS</a></li>
         <li><a href="#">Frontend</a></li>
@@ -20,15 +20,16 @@
     </nav>
 
     <div>
-      <input type="search" placeholder="Поиск">
+      <label for="search"></label>
+      <input type="search" id="search" name="search" placeholder="Поиск">
     </div>
   </header>
 
   <main>
     <section>
-      <div>
+      <p>
         FRONTEND &middot; 12 мая 2024
-      </div>
+      </p>
       <article>
         <h1>
           Теория цвета - Как цвет влияет на поведение потребителей
@@ -36,8 +37,8 @@
         <div>
           <img src="./images/author.png" alt="Наталия Васильевна автор статьи">
           <div>
-            Наталия Васильевна <br />
-            Разработчик
+            <p>Наталия Васильевна</p> 
+            <p>Разработчик</p>
           </div>
         </div>
         <div>
@@ -67,9 +68,9 @@
   </main>
 
   <footer>
-    <div>
+    <p>
       Все права защищены (c) 2024
-    </div>
+    </p>
   </footer>
 
 </body>

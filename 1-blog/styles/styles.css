@@ -1,0 +1,100 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Source Sans Pro", sans-serif;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+a,
+p,
+h1 {
+  color: #ffffff;
+}
+
+.blog__link {
+  font-size: 18px;
+}
+
+.header__btn {
+  font-family: var(--second-family);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  border-width: 0;
+  background: #4b5563;
+}
+
+.nav__item a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#search {
+  background-color: #283241;
+  padding: 8px 16px;
+}
+
+.search__input {
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 10px;
+  fill: #808080;
+  transition: fill 0.1s linear;
+}
+
+.topic {
+  color: #adb1b7;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.author .name {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.author .position {
+  color: #abafb6;
+  font-size: 14px;
+  line-height: 28px;
+  line-height: 2;
+}
+
+.abstract {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.article_text {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.article_text span {
+  text-decoration: underline;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #a0a3a9;
+}

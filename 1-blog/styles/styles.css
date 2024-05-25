@@ -17,6 +17,11 @@ h1 {
   color: #ffffff;
 }
 
+header {
+  margin-bottom: 70px;
+}
+
+
 .blog__link {
   font-size: 18px;
 }
@@ -40,7 +45,9 @@ h1 {
 
 #search {
   background-color: #283241;
-  padding: 8px 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
 }
 
 .search__input {
@@ -52,7 +59,7 @@ h1 {
   width: 14px;
   height: 14px;
   left: 3px;
-  top: 10px;
+  top: 8px;
   fill: #808080;
   transition: fill 0.1s linear;
 }
@@ -65,6 +72,7 @@ h1 {
 .title {
   font-size: 24px;
   line-height: 38px;
+  margin-bottom: 30px;
 }
 
 .author .name {
@@ -79,9 +87,14 @@ h1 {
   line-height: 2;
 }
 
+.article__container {
+  margin-top: 28px;
+}
+
 .abstract {
   font-size: 20px;
   line-height: 32px;
+  margin-top: 70px;
 }
 
 .article_text {
@@ -97,4 +110,5 @@ h1 {
   font-size: 16px;
   line-height: 28px;
   color: #a0a3a9;
+  margin-top: 80px;
 }

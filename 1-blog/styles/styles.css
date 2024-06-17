@@ -21,6 +21,22 @@ header {
   margin-bottom: 70px;
 }
 
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+#search {
+  background-color: #283241;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+}
 
 .blog__link {
   font-size: 18px;
@@ -36,18 +52,6 @@ header {
   height: 35px;
   border-width: 0;
   background: #4b5563;
-}
-
-.nav__item a {
-  font-size: 16px;
-  text-decoration: none;
-}
-
-#search {
-  background-color: #283241;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 20px;
 }
 
 .search__input {

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffd1dc, #ff94c2);
+  height: 100vh;
+}
+
+form {
+  background-color: #FFFEFE;
+}
+
+input {
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+button {
+  background-color: #089FE0;
+}
+
+p, label {
+  color: #666666;
+}

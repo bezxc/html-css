@@ -5,6 +5,9 @@
 
 * {
   font-family: var(--font-family);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,12 +33,36 @@ ul {
   list-style: none;
 }
 
-
 #search {
   background-color: #283241;
   padding: 8px 20px;
   border: none;
   border-radius: 20px;
+  color: #ffffff;
+}
+
+#search:focus {
+  outline: none;
+}
+
+#search::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 0 0 0;
+}
+
+.nav__container ul {
+  display: flex;
+  gap: 40px;
+  align-self: flex-start;
 }
 
 .blog__link {
@@ -52,10 +79,13 @@ ul {
   height: 35px;
   border-width: 0;
   background: #4b5563;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .search__input {
   position: relative;
+  margin-left: auto;
 }
 
 .search__icon {
@@ -68,15 +98,34 @@ ul {
   transition: fill 0.1s linear;
 }
 
+.article {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.article__image {
+  max-width: 100%;
+}
+
 .topic {
   color: #adb1b7;
   font-size: 14px;
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 .title {
   font-size: 24px;
   line-height: 38px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.author__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
 }
 
 .author .name {
@@ -104,6 +153,7 @@ ul {
 .article_text {
   font-size: 16px;
   line-height: 30px;
+  margin-top: 30px;
 }
 
 .article_text span {
@@ -115,4 +165,6 @@ ul {
   line-height: 28px;
   color: #a0a3a9;
   margin-top: 80px;
+  text-align: center;
+  padding-bottom: 70px;
 }

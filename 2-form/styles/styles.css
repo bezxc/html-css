@@ -80,17 +80,18 @@ p a {
 }
 
 .form__button {
-  position: relative;
   background-color: #089fe0;
   border-radius: 5px;
   color: #ffffff;
   padding: 12px;
   border: none;
-  width: 100%;
   font-size: 18px;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.form__button-text {
+  flex-grow: 1;
 }
 
 #policy {

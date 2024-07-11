@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,13 @@
 }
 
 main {
-  background: linear-gradient(to bottom right, #ffd1dc, #ff94c2);
+  background: linear-gradient(
+      225deg,
+      #fdc5c5 25.45%,
+      rgba(242, 152, 222, 0) 100%
+    ),
+    linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%),
+    #f39494;
   height: 100vh;
 }
 
@@ -22,6 +30,16 @@ p {
 p a {
   font-size: 18px;
   color: #089fe0;
+}
+
+input {
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus {
+  background-color: #ffffff;
+  border: 1px solid #333333;
 }
 
 .register {
@@ -88,6 +106,7 @@ p a {
   font-size: 18px;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .form__button-text {
@@ -106,6 +125,10 @@ label a {
 .form__button-icon {
   position: absolute;
   right: 20px;
+}
+
+label {
+  font-size: 14px;
 }
 
 p,

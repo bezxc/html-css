@@ -3,6 +3,27 @@
   color: var(--color-text);
 }
 
+.section__header__h3 {
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-secondary);
+}
+
+.section__header__h2 {
+  font-size: 46px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.section__header__description {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-text);
+  margin-top: 32px;
+  max-width: 787px;
+  margin-bottom: 32px;
+}
+
 .button {
   color: var(--color-text);
   border: none;
@@ -23,8 +44,12 @@
   border: 1px solid var(--color-stroke);
 }
 
-.button:hover {
-  opacity: 0.8;
+.button_primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.button_ghost:hover {
+  background-color: var(--color-bg-light);
 }
 
 .gradient-text {
@@ -56,10 +81,220 @@
   background-color: var(--color-bg-medium);
 }
 
+/* Blog card */
+.blog__card {
+  padding: 34px 40px 34px 32px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  background-color: var(--color-bg-medium);
+  border-radius: var(--border-10);
+}
+
+.blog__card:first-child {
+  margin-top: 48px;
+}
+
+.blog__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 775px;
+}
+
+.blog__card__chips {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.blog__card__chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-link-hover);
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.blog__card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.blog__card__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text);
+}
+
+.center {
+  text-align: center;
+}
+
+/* Card */
+.card {
+  background-color: var(--color-bg-medium);
+  border-radius: var(--border-10);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__wrapper {
+  padding: 24px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.card__author {
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-link-hover);
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-text);
+  gap: 8px;
+}
+
+.card__rating {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.card__price {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-light);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: var(--color-text);
+  border-radius: 0 0 var(--border-10) var(--border-10);
+}
+
+/* Chips */
+.chips {
+  display: flex;
+  gap: 24px;
+  overflow: auto;
+  margin-right: -24px;
+  padding-left: 24px;
+  margin-left: -24px;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chips__item {
+  padding: 8px 16px;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-10);
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-text);
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+}
+
+.chips__item:hover {
+  background-color: var(--color-bg-medium);
+}
+
+.chips__item_active {
+  background-color: var(--color-primary);
+}
+
+.chips__item_active:hover {
+  background-color: var(--color-secondary);
+}
+
+.card__chip {
+  text-align: center;
+  padding: 6px 12px;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-17);
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+/* Margins */
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
 /* Media breakpoints */
 @media (max-width: 960px) {
   .button {
     padding: 12px 24px;
     font-size: 18px;
+  }
+}
+
+/* Sections */
+@media (max-width: 480px) {
+  .section__header__h2 {
+    font-size: 34px;
+  }
+}
+
+/* Blog */
+@media (max-width: 768px) {
+  .blog__card {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .card__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog__card__chip {
+    font-size: 14px;
+  }
+  .blog__card__title {
+    font-size: 21px;
   }
 }

@@ -17,7 +17,6 @@
 .footer__menu {
   display: flex;
   gap: 80px;
-  align-items: center;
   margin-top: 36px;
 }
 

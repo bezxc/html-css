@@ -90,4 +90,7 @@
   .menu {
     display: none;
   }
+  .header__wrapper {
+    padding: 32px 24px;
+  }
 }

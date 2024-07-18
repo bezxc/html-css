@@ -1,12 +1,20 @@
 :root {
   --font-family: "Inter", sans-serif;
+
+  --layout-max-width: calc(1392px - 48px);
   --color-primary: #357efe;
   --color-secondary: #1abc9c;
   --color-accent: #ffc736;
+
   --color-text: #000000;
   --color-text-light: #ffffff;
   --color-gray-text: #4e5d7c;
+  --color-text-white-opacity: rgba(255, 255, 255, 0.8);
   --color-gray-text-light: rgba(78, 93, 124, 0.5);
+  --color-divider: rgba(78, 93, 124, 0.08);
+
   --color-bg-light: #ffffff;
+  --color-bg-dark: #1a1d25;
+
   --border-8: 8px;
 }

@@ -1,37 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Регистрация</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-</head>
-
-<body>
-  <main>
-    <form>
-      <div>
-        <h1>Регистрация</h1>
-        <p>У вас уже есть аккаунт? <a href="#">Войти</a> </p>
-      </div>
-      <div>
-        <input required type="text" placeholder="Введите название компании" name="company" id="company">
-      </div>
-      <div>
-        <input placeholder="Имя" required type="text" id="name" name="name">
-        <input placeholder="Фамилия" required type="text" id="lastName" name="lastName">
-      </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="E-mail" required>
-      </div>
-      <button type="submit">Зарегистрироваться</button>
-      <div>
-        <input type="checkbox" name="policy" id="policy">
-        <label for="policy">Я прочитал и принимаю <a href="#">Условия пользования</a></label>
-      </div>
-    </form>
-  </main>
-</body>
-
+  <body>
+    <main>
+      <section class="register">
+        <form class="register__form">
+          <div class="register__header">
+            <h1>Регистрация</h1>
+            <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+          </div>
+          <div class="register__body">
+            <div>
+              <input
+                class="form__input"
+                required
+                type="text"
+                placeholder="Введите название компании"
+                name="company"
+                id="company"
+              />
+            </div>
+            <div class="multi-input">
+              <input
+                class="form__input form__input_left"
+                placeholder="Имя"
+                required
+                type="text"
+                id="name"
+                name="name"
+              />
+              <input
+                class="form__input form__input_right"
+                placeholder="Фамилия"
+                required
+                type="text"
+                id="lastName"
+                name="lastName"
+              />
+            </div>
+            <div>
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <button class="form__button" type="submit">
+              <span class="form__button-text">Зарегистрироваться</span>
+              <img src="./icons/chevronRight.svg" />
+            </button>
+            <div>
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy"
+                >Я прочитал и принимаю
+                <a href="#">Условия пользования</a></label
+              >
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,27 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
+  box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(to bottom right, #ffd1dc, #ff94c2);
+main {
+  background: linear-gradient(
+      225deg,
+      #fdc5c5 25.45%,
+      rgba(242, 152, 222, 0) 100%
+    ),
+    linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%),
+    #f39494;
   height: 100vh;
 }
 
-form {
-  background-color: #FFFEFE;
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+}
+
+p a {
+  font-size: 18px;
+  color: #089fe0;
 }
 
 input {
-  background-color: #F5F5F5;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus {
+  background-color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.register__form {
+  padding: 72px 95px 91px;
+  border-radius: 10px;
+  background-color: #fffefe;
+}
+
+.register__header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.multi-input {
+  display: flex;
+  gap: 1px;
+}
+
+.form__input {
+  background-color: #f5f5f5;
   color: #333333;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
 }
 
-button {
-  background-color: #089FE0;
+.form__input_white {
+  background-color: #ffffff;
+  border: 1px solid #f5f5f5;
 }
 
-p, label {
+.form__input_left {
+  border-radius: 5px 0 0 5px;
+}
+
+.form__input_right {
+  border-radius: 0 5px 5px 0;
+}
+
+.form__button {
+  background-color: #089fe0;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.form__button-text {
+  flex-grow: 1;
+}
+
+#policy {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+label a {
+  color: #089fe0;
+}
+
+.form__button-icon {
+  position: absolute;
+  right: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+p,
+label {
   color: #666666;
 }

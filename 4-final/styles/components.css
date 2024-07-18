@@ -1,3 +1,4 @@
+
 /* NAVIGATION */
 
 .navigation__list {
@@ -23,6 +24,7 @@
 
 .section {
   margin: 0 auto;
+
   max-width: var(--layout-max-width);
   padding: 80px 24px 0px;
 }
@@ -324,6 +326,9 @@
   margin: 80px auto 63px;
 }
 
+=======
+/* DIVIDER */
+
 .divider::before {
   display: block;
   grid-column: 1 / -1;
@@ -391,6 +396,7 @@
   .card {
     padding: 48px 24px;
   }
+
   .section_p-120 {
     padding-top: 64px;
   }

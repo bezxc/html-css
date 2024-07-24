@@ -263,7 +263,6 @@
 .mb-32 {
   margin-bottom: 32px;
 }
-
 /* Media breakpoints */
 @media (max-width: 960px) {
   .button {

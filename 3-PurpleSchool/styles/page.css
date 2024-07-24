@@ -164,7 +164,7 @@
     grid-template-columns: [start] repeat(2, 1fr) [end];
     gap: 16px 75px;
   }
-
+  
   .hero {
     flex-direction: column;
     gap: 24px;

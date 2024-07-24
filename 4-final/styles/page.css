@@ -72,17 +72,22 @@
   display: flex;
   justify-content: center;
   gap: 64px;
-  margin-top: 80px;
+  margin: 80px 0px;
 }
 
 .benefit {
   display: flex;
   align-items: center;
   gap: 16px;
-
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
+}
+
+.system-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 /* Sync */
@@ -131,11 +136,11 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
-  content: url("/assets/icons/check-circle.svg");
+  content: url("../assets/icons/check-circle.svg");
 }
 
 .sync__sked-item:nth-child(2) li::before {
-  content: url("/assets/icons/exclamation-circle.svg");
+  content: url("../assets/icons/exclamation-circle.svg");
 }
 
 .advantages {

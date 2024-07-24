@@ -1,7 +1,7 @@
 :root {
   --font-family: "Inter", sans-serif;
 
-  --layout-max-width: calc(1392px - 48px);
+  --layout-max-width: calc(1392px + 48px);
   --color-primary: #357efe;
   --color-secondary: #1abc9c;
   --color-accent: #ffc736;

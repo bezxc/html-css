@@ -78,12 +78,22 @@
 
 .system-descr__card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 65px;
+  position: relative;
 }
 
-.system-descr__card_reverse {
+.system-descr__card::before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-divider);
+}
+
+.system-descr__card:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
@@ -113,6 +123,7 @@
   border-radius: var(--border-8);
   display: grid;
   grid-template-rows: 1fr;
+  color: var(--color-gray-text);
 }
 
 .card_primary {
@@ -147,23 +158,16 @@
 
 .card__body {
   display: grid;
-  gap: 16px;
   margin-top: 32px;
-}
-
-.card__details {
-  position: relative;
-  display: grid;
   grid-template-columns: auto 1fr;
-  justify-items: center;
   align-items: center;
-  color: var(--color-gray-text);
-  font-weight: 500;
-  line-height: 120%;
+  row-gap: 16px;
+  position: relative;
 }
 
-.card__details_light {
-  color: var(--color-text-light);
+.card__body span:nth-child(even) {
+  padding: 8px 16px;
+  justify-self: flex-start;
 }
 
 /* BUTTONS */
@@ -324,40 +328,52 @@
   margin: 80px auto 63px;
 }
 
-.divider::before {
-  display: block;
-  grid-column: 1 / -1;
+.benefit-chip::before {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 48px;
   width: 100%;
   content: "";
   height: 1px;
   background-color: rgba(78, 93, 124, 0.08);
-  margin-bottom: 7px;
 }
 
-.divider::after {
-  display: block;
-  grid-column: 1 / -1;
+.benefit-chip::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 48px;
   width: 100%;
   content: "";
   height: 1px;
   background-color: rgba(78, 93, 124, 0.08);
-  margin-top: 7px;
 }
 
-.divider_light::after {
+.benefit-chip_light::after {
   background-color: rgba(255, 255, 255, 0.16);
 }
 
-.divider_light::before {
+.benefit-chip_light::before {
   background-color: rgba(255, 255, 255, 0.16);
 }
 
 /* MEDIA QUERIES  */
 
+@media (max-width: 1200px) {
+  .system-descr__image {
+    width: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .system-descr__card {
     flex-direction: column;
     align-items: flex-start;
+    gap: 32px;
+  }
+  .system-descr__card:nth-child(odd) {
+    flex-direction: column;
   }
   .section_top-padding {
     padding-top: 64px;
